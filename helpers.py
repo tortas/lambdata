@@ -15,5 +15,6 @@ def train_val_test_split(X,y):
     return X_train, y_train, X_val, y_val, X_test, y_test
 
 def list_to_column(X, lst, name):
+    
     X[name] = pd.Series(lst)
     return
